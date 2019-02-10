@@ -5,50 +5,26 @@ using UnityEngine;
 using UnityEngine.UI;
 using ConsoleApp1;
 
-//namespace ConsoleApp1
-//{
+namespace ConsoleApp1
+{
     public class FinalScript : MonoBehaviour
     {
-
-        public Text welcomeText;
-        public Text warningText;
+        public Text log;
+        public Text output;
         public InputField inputField;
 
+        private string currentQuestion;
+        private List<QA> historyQA = new List<QA>();
 
-        string currentQuestion;
-        string currentAnswer;
-        List<string> questions = new List<string>();
-        List<QA> historyQA = new List<QA>();
-        bool temporary = true;
         void Start()
         {
-            //welcomeText.text = "hello";
-            questions.Add("what?");
-            questions.Add("who?");
-            questions.Add("where?");
-            questions.Add("when?");
-            questions.Add("how?");
+
         }
 
 
         void Update()
         {
-            //if (temporary == true)
-            //{
-            //    for (int i = 0; i < 5; i++)
-            //    {
-            //        currentQuestion = questions[i];
-            //        currentAnswer = Answer.GetAnswer(currentQuestion);
-            //        historyQA.Add(new QA(currentQuestion, currentAnswer));
-            //    }
-            //    foreach (QA temp in historyQA)
-            //    {
-            //        welcomeText.text += temp.Question + " " + temp.Answer + "\n";
-            //        Console.Write(temp.Answer);
-            //    }
-            //}
-            //temporary = false;
-
+        
         }
 
         public void SubmitAnswer()
@@ -56,27 +32,47 @@ using ConsoleApp1;
             currentQuestion = inputField.text;
             if (currentQuestion == "" || currentQuestion.LastIndexOf('?') == -1)
             {
-                warningText.text = "Not a valid question!";
+                ShowError("Not a valid question!");
             }
             else
             {
                 QA currentInput = Answer.CheckIfAnswered(currentQuestion, historyQA);
                 if (currentInput == null)
                 {
-                    currentAnswer = Answer.GetAnswer(currentQuestion);
-                    historyQA.Add(new QA(currentQuestion, currentAnswer));
-                    welcomeText.text = "> " + currentQuestion + "\n" + currentAnswer + "\n" + welcomeText.text;
-                    warningText.text = "";
+                    currentInput = new QA(currentQuestion, Answer.GetAnswer(currentQuestion));
+                    historyQA.Add(currentInput);
+                    ShowAnswer(currentInput.Answer);
                 }
                 else
                 {
-                    warningText.text = "Already asked!";
-                    welcomeText.text = "> " + currentInput.Question + "\n " + currentInput.Answer + "\n" + welcomeText.text;
+                    ShowError("Already asked!");
                 }
+                AddToLog(currentInput);
             }
-        inputField.text = "";
-        inputField.Select();
-        inputField.ActivateInputField();
+            inputField.text = "";
+            inputField.Select();
+            inputField.ActivateInputField();
+        }
+
+        public void ShowError(string answer)
+        {
+            output.color = Color.red;
+            output.fontSize = 15;
+            output.text = answer;
+        }
+
+        public void ShowAnswer(string answer)
+        {
+            output.color = Color.green;
+            output.fontSize = 20;
+            output.text = answer;
+        }
+
+        private void AddToLog(QA currentQA)
+        {
+            log.text = "> " + currentQA.Question + "\n " + currentQA.Answer + "\n" + log.text;
         }
     }
-//}
+
+
+}
