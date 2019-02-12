@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using UnityEngine.UI;
+using UnityEngine;
 
 namespace ConsoleApp1
 {
@@ -8,7 +10,6 @@ namespace ConsoleApp1
     {
         private static List<string> answers = new List<string>();
         private static System.Random randomGenerator = new System.Random();
-
 
         public static string GetAnswer(string question)
         {
