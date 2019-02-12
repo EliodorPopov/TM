@@ -227,9 +227,9 @@ GameObject:
   - component: {fileID: 279032577}
   - component: {fileID: 279032578}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Log
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -306,8 +306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0a323808383ce439f1db9d00684541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  welcomeText: {fileID: 279032575}
-  warningText: {fileID: 0}
+  log: {fileID: 0}
+  output: {fileID: 0}
   inputField: {fileID: 0}
 --- !u!223 &279032578
 Canvas:
@@ -935,8 +935,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0a323808383ce439f1db9d00684541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  welcomeText: {fileID: 0}
-  warningText: {fileID: 0}
+  log: {fileID: 0}
+  output: {fileID: 0}
   inputField: {fileID: 0}
 --- !u!1 &751879149
 GameObject:
@@ -1020,7 +1020,7 @@ GameObject:
   - component: {fileID: 1338788162}
   - component: {fileID: 1338788163}
   m_Layer: 5
-  m_Name: WarningText
+  m_Name: Output
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1042,8 +1042,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -160, y: 28.7}
-  m_SizeDelta: {x: 188, y: 20.7}
+  m_AnchoredPosition: {x: -149.29999, y: 14}
+  m_SizeDelta: {x: 220.2, y: 50.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1338788162
 CanvasRenderer:
@@ -1306,8 +1306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0a323808383ce439f1db9d00684541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  welcomeText: {fileID: 279032575}
-  warningText: {fileID: 1338788163}
+  log: {fileID: 279032575}
+  output: {fileID: 1338788163}
   inputField: {fileID: 391450430}
 --- !u!4 &1983134508
 Transform:
