@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8352942, g: 0.050980397, b: 0.050980397, a: 1}
+  m_Color: {r: 0.8679245, g: 0.22044963, b: 0.07778566, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -788,7 +788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8352942, g: 0.050980397, b: 0.050980397, a: 1}
+  m_Color: {r: 0.9433962, g: 0.245517, b: 0.057849795, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -797,7 +797,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 953f8cd6fee8af7429bdf53e68611916, type: 3}
-    m_FontSize: 20
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -808,13 +808,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet sem
-    laoreet, molestie tellus vitae, pretium ligula. Fusce nec est ultrices, sollicitudin
-    lectus at, suscipit diam. Donec sodales consequat pretium. Sed interdum in justo
-    non fermentum. Duis pellentesque, dui vel sodales lacinia, ipsum velit scelerisque
-    enim, eu tempus arcu dui ut dui. Sed tristique condimentum diam. Suspendisse in
-    lorem interdum, fringilla mi ac, placerat tellus. Fusce vehicula feugiat augue
-    non pulvinar. Cras tempus lobortis tellus id molestie.
+  m_Text: "StarBall reaches into the future across the galaxy, to find the answers
+    to your questions. It knows what will be, and is willing to share this with you.\r\n\r\nJust
+    think of a question that can be answered \"Yes\" or \"No\"  and write in down.
+    Then let StarBall show you the way! May the Ball be with you!"
 --- !u!222 &2060280507
 CanvasRenderer:
   m_ObjectHideFlags: 0
