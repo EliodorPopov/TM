@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-
+using ConsoleApp1;
 public class Answers
 {
     private List<string> _answers = new List<string>();
@@ -27,7 +27,7 @@ public class Answers
     {
         foreach (QA askedQA in history)
         {
-            if (question == askedQA.question)
+            if (question == askedQA.Question)
             {
                 return askedQA;
             }
