@@ -2,9 +2,13 @@
 using TMPro;
 using UnityEngine.UI;
 using System.Collections.Generic;
+<<<<<<< HEAD
 using System;
 using System.Collections;
+=======
 using ConsoleApp1;
+using System;
+>>>>>>> c0a57489b1ac09ff3a554b14cd9357864fddb17c
 
 public class Controller : MonoBehaviour
 {
