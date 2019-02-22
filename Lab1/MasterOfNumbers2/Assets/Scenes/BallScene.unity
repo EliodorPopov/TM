@@ -319,10 +319,9 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.0000017633096}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 693046904}
+  m_Children: []
   m_Father: {fileID: 815521698}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -751,6 +750,7 @@ RectTransform:
   m_Children:
   - {fileID: 1087377241}
   - {fileID: 1101532264}
+  - {fileID: 298252167}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -939,7 +939,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1428669601}
-        m_MethodName: SubmitAnswer
+        m_MethodName: OnButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -965,11 +965,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.InputField+SubmitEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
     m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
@@ -1042,19 +1037,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1428669600}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 633e2aa30ecdcc945b30d74c09e97a36, type: 3}
+  m_Script: {fileID: 11500000, guid: d842a55c2da364283af2252d6904e2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballAnimationTime: 2.67
+  ballAnimationTime: 3
   ballAnimator: {fileID: 573153472}
   ballText: {fileID: 1522883086}
-<<<<<<< HEAD
   inputfield: {fileID: 1101532265}
-=======
-  goButton: {fileID: 298252168}
-  log: {fileID: 0}
-  inputField: {fileID: 1101532265}
->>>>>>> c0a57489b1ac09ff3a554b14cd9357864fddb17c
 --- !u!4 &1428669602
 Transform:
   m_ObjectHideFlags: 0
@@ -1279,13 +1268,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-<<<<<<< HEAD
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
-=======
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 0
->>>>>>> c0a57489b1ac09ff3a554b14cd9357864fddb17c
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []

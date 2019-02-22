@@ -259,7 +259,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 534669907}
+      - m_Target: {fileID: 534669906}
         m_MethodName: helpButton
         m_Mode: 1
         m_Arguments:
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 534669907}
+      - m_Target: {fileID: 534669906}
         m_MethodName: startButton
         m_Mode: 1
         m_Arguments:
@@ -530,7 +530,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 534669902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68ea4d4735cbead41a50cd62509c775c, type: 3}
+  m_Script: {fileID: 11500000, guid: 7199b0d98831c44b999b8becab3829cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &534669907
